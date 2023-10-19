@@ -1,26 +1,21 @@
-import time  # Import the 'time' module for managing time-related functions
+import os
+import pickle
+import shutil
 import tkinter as tk  # Import the 'tkinter' module for creating a graphical user interface
+from datetime import datetime
 from tkinter import filedialog  # Import 'filedialog' module from tkinter for file dialog functionality
 
 import cv2  # Import 'cv2' module, which is OpenCV, for computer vision tasks
-from PIL import Image, ImageTk
+import face_recognition
+import numpy as np
+from PIL import ImageTk, Image
+
+from DatabaseController import upload_user_to_database, match_users
+from User import User
+from toster_face_encode import EncodeProcess
 
 
-# Define a User class to represent user information
-class User:
-    def __init__(self, name, email, t_number, image_path, role="student"):
-        self.name = name
-        self.email = email
-        self.t_number = t_number
-        self.image_path = image_path
-        self.role = role  # Include the 'role' attribute with a default value of "student"
-
-    def __str__(self):
-        return (f"User:\nName: {self.name},"
-                f"\nEmail: {self.email},"
-                f"\nT Number: {self.t_number},"
-                f"\nImage Path: {self.image_path},"
-                f"\nRole: {self.role}")
+# from PIL.ImageTk import Image
 
 
 # Define the main application view using tkinter
@@ -76,29 +71,34 @@ class FaceValidityFrame(tk.Frame):
         back_button.pack()
 
         self.video_capture = None
-        self.camera_index = 0  # Start with camera index 0
+        self.camera_index = 1
 
         self.canvas = tk.Canvas(self, width=400, height=400)
         self.canvas.pack()
 
+        self.find_camera_index()
         self.try_open_camera()  # Attempt to open the camera
 
         if self.video_capture is not None:
             self.update()  # Start updating the webcam feed
 
     def try_open_camera(self):
-        try:
-            self.video_capture = cv2.VideoCapture(self.camera_index)
 
+        try:
+
+            self.video_capture = cv2.VideoCapture(self.camera_index)
+            print(f"Camera @ index {self.camera_index}")
             if not self.video_capture.isOpened():
                 raise Exception(f"Camera with index {self.camera_index} not available")
 
+
         except Exception as e:
             print(e)
-            self.camera_index = 1 - self.camera_index  # Switch between camera 0 and 1
+            # Switch between camera ports 0 and 1
+            self.camera_index = 1 - self.camera_index
             try:
                 self.video_capture = cv2.VideoCapture(self.camera_index)
-
+                print(f"Camera @ index {self.camera_index}")
                 if not self.video_capture.isOpened():
                     raise Exception(f"Camera with index {self.camera_index} not available")
 
@@ -107,17 +107,74 @@ class FaceValidityFrame(tk.Frame):
                 self.video_capture = None
 
     def update(self):
-        if self.video_capture is not None:
-            ret, frame = self.video_capture.read()
+        print('Update method')
 
-            if ret:
+        folder_path = 'Encodings/EncodeFile.p'
+        file = open(folder_path, 'rb')
+        enc_students_list = pickle.load(file)
+        file.close()
+        enc_list_known, students_ids = enc_students_list
+        # for i in students_ids:
+        #     print(f"Students IDs:\t{str(i).upper()}")
+
+        if self.video_capture is not None:
+            success, frame = self.video_capture.read()
+
+            if success:
+                # Display the frame on the canvas
                 rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 photo = ImageTk.PhotoImage(Image.fromarray(rgb_frame))
-
                 self.canvas.create_image(0, 0, anchor=tk.NW, image=photo)
                 self.canvas.photo = photo
 
-            self.after(10, self.update)
+                # Process the frame for face recognition
+                # small_img = cv2.resize(photo, (0, 0), None, 0.25, 0.25)
+                # small_img = cv2.cvtColor(small_img, cv2.COLOR_BGR2RGB)
+
+                user_face = face_recognition.face_locations(rgb_frame)
+                encoded_cur_face = face_recognition.face_encodings(rgb_frame, user_face)
+                print(f'Current User encode is:{np.shape(encoded_cur_face)}')
+
+                # for encoded_face, face_location in zip(encoded_cur_face, user_face):
+                #     matches = face_recognition.compare_faces(enc_list_known, encoded_face)
+                #     measured_accuracy = face_recognition.face_distance(enc_list_known, encoded_face)
+                #     # print('Matches', matches)
+                #     # print("Accuracy", measured_accuracy) # Smaller is better
+                #     # print("matches_Ids", students_ids)
+                #
+                #     match_index = np.argmin(measured_accuracy)
+                #     # print(f"Matched Users ID: {match_index}")
+                #
+                #     if matches[match_index]:
+                #         print(f"Face Detected: {str(students_ids[match_index]).upper()}")
+                print('passing encode to \"match_users\"')
+                match_users(encoded_cur_face)
+
+                # Iterate through all matching users and print their information
+                # for user in matching_users:
+                #     print(f"User Detected: {user.t_number}\t{user.name}")
+
+        # Schedule the update method to run periodically
+        self.after(100, self.update)
+
+    def check_camera_in_use(self, index):
+        try:
+            capture = cv2.VideoCapture(index)
+
+            cam_stat = capture.isOpened()
+
+            return cam_stat
+
+        except Exception as e:
+            print(f"Error checking camera at index {index}: {e}")
+            return False  # An error occurred while checking
+
+    def find_camera_index(self):
+        for i in range(10):  # Try indices from 0 to 9
+            cap = cv2.VideoCapture(i)
+            if cap.isOpened():
+                print(f"Camera found at index {i}")
+                cap.release()
 
 
 # Define the login frame
@@ -170,7 +227,7 @@ class RegistrationFrame(tk.Frame):
 
         # Create a variable to store the selected role
         self.selected_role = tk.StringVar(self)
-        self.selected_role.set("teacher")  # Default role selection
+        self.selected_role.set("student")  # Default role selection
 
         # Create a dropdown menu for role selection
         role_options = ["teacher", "student"]
@@ -220,6 +277,9 @@ class RegistrationFrame(tk.Frame):
 
     # Method to handle user registration
     def register(self):
+
+        # TODO crop the image before storing approx 216 x 216
+        global destination_directory
         name = self.name_entry.get()
         email = self.email_entry.get()
         t_number = self.t_number_entry.get()
@@ -227,18 +287,44 @@ class RegistrationFrame(tk.Frame):
         role = self.selected_role.get()
 
         if image_path:
-            user = User(name, email, t_number, image_path, role)
-            print(user)
-            print("Registration Successful")
+            # Set the destination directory to 'user_reg_img'
+            destination_directory = "user_reg_img"
 
+            # Ensure the destination directory exists, create it if necessary
+            if not os.path.exists(destination_directory):
+                os.makedirs(destination_directory)
+
+            # Combine the destination directory with the filename "t_number.jpg"
+            new_image_path = os.path.join(destination_directory, f"{t_number}.jpg")
+
+            # Copy the image to the destination directory
+            shutil.copy(image_path, new_image_path)
+            print(f"Image copied to: {new_image_path}")
+
+            encode_process = EncodeProcess(destination_directory)
+            encode = encode_process.create_encode(new_image_path)
+
+            current_datetime = datetime.now()
+
+            # Format it as "YYYY-MM-dd HH:MM:SS"
+            registered_date_time = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
+
+            # Create a User object with the encoding
+            user = User(name, email, t_number, new_image_path, role, encode, registered=registered_date_time)
+            # print(user)
+            print(f"Registration Successful for user: {user.name} on {registered_date_time}")
+            key = upload_user_to_database(user)
+            print(key)
+
+            # Clear the form fields and other UI elements
             self.name_entry.delete(0, tk.END)
             self.email_entry.delete(0, tk.END)
             self.t_number_entry.delete(0, tk.END)
             self.controller.update_image_path(None)
             self.small_icon_label.pack_forget()
 
-            time.sleep(2)
-            self.switch_to_login()
+            # Switch to the Login Frame after a delay (e.g., 2 seconds)
+            self.after(2000, self.switch_to_login)
 
         else:
             print("Please upload an image before registering.")
@@ -279,3 +365,4 @@ if __name__ == "__main__":
     icon_path = 'Images/icons8-ok-48.png'  # Define the path to the application icon
     controller = AppController(icon_path)  # Create the main application controller
     controller.run()  # Run the application
+
