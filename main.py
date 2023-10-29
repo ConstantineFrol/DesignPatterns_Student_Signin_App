@@ -10,7 +10,6 @@ from PIL import Image, ImageTk
 import util
 
 
-# from test import test
 
 
 class App:
@@ -52,7 +51,7 @@ class App:
         ret, frame = self.cap.read()
 
         self.img_snap = frame
-        current_user_img = cv2.cvtColor(self.img_snap, cv2.COLOR_BGR2RGB) # if webcam not working - Error
+        current_user_img = cv2.cvtColor(self.img_snap, cv2.COLOR_BGR2RGB)  # if webcam not working - Error
         self.recent_capture = Image.fromarray(current_user_img)
         imgtk = ImageTk.PhotoImage(image=self.recent_capture)
         self._label.imgtk = imgtk
@@ -62,49 +61,26 @@ class App:
 
     def login(self):
 
-        # label = test(
-        #         image=self.most_recent_capture_arr,
-        #         model_dir='/home/phillip/Desktop/todays_tutorial/27_face_recognition_spoofing/code/face-attendance-system/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
-        #         device_id=0
-        #         )
-        label = 1
-        if label == 1:
+        name = util.recognize(self.img_snap, self.db_dir)
 
-            name = util.recognize(self.img_snap, self.db_dir)
-
-            if name in ['unknown_person', 'no_persons_found']:
-                util.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
-            else:
-                util.msg_box('Welcome back !', 'Welcome, {}.'.format(name))
-                with open(self.log_path, 'a') as f:
-                    f.write('{},{},in\n'.format(name, datetime.datetime.now()))
-                    f.close()
-
+        if name in ['unknown_person', 'no_persons_found']:
+            util.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
         else:
-            util.msg_box('Hey, you are a spoofer!', 'You are fake !')
+            util.msg_box('Welcome back !', 'Welcome, {}.'.format(name))
+            with open(self.log_path, 'a') as f:
+                f.write('{},{},in\n'.format(name, datetime.datetime.now()))
+                f.close()
 
     def logout(self):
+        name = util.recognize(self.img_snap, self.db_dir)
 
-        # label = test(
-        #         image=self.most_recent_capture_arr,
-        #         model_dir='/home/phillip/Desktop/todays_tutorial/27_face_recognition_spoofing/code/face-attendance-system/Silent-Face-Anti-Spoofing/resources/anti_spoof_models',
-        #         device_id=0
-        #         )
-        label = 1
-        if label == 1:
-
-            name = util.recognize(self.img_snap, self.db_dir)
-
-            if name in ['unknown_person', 'no_persons_found']:
-                util.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
-            else:
-                util.msg_box('Hasta la vista !', 'Goodbye, {}.'.format(name))
-                with open(self.log_path, 'a') as f:
-                    f.write('{},{},out\n'.format(name, datetime.datetime.now()))
-                    f.close()
-
+        if name in ['unknown_person', 'no_persons_found']:
+            util.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
         else:
-            util.msg_box('Hey, you are a spoofer!', 'You are fake !')
+            util.msg_box('See you soon!', 'Goodbye, {}.'.format(name))
+            with open(self.log_path, 'a') as f:
+                f.write('{},{},out\n'.format(name, datetime.datetime.now()))
+                f.close()
 
     def register_new_user(self):
         self.registration_window = tk.Toplevel(self.main_window)
@@ -150,10 +126,8 @@ class App:
 
         file = open(os.path.join(self.db_dir, '{}.pickle'.format(user_name)), 'wb')
         pickle.dump(user_img_encode, file)
-
-        util.msg_box('Success!', 'User was registered successfully !')
-
         self.registration_window.destroy()
+        util.msg_box('Success!', 'User was registered successfully !')
 
 
 if __name__ == "__main__":
