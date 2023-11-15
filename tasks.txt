@@ -1,0 +1,34 @@
+# TODO: Add a new user to the database(see database.py) by creating a new instance of User(see user.py)
+# TODO: Add new frame to the main window with a form for adding a new user, and swap then. {Design Patterns}
+# TODO: Store webcam captures in database as encoded images.
+# TODO: Apply Control-View-Model. {Design Patterns}
+
+Apply MVC to main class. {Design Patterns}
+
+View:
+
+      A view represents user interface (UI) components such as buttons, labels, and windows. In this code you are using tkinter to create the user interface.
+      Create a class that handles creating and managing UI components and UI layout.
+
+Controller:
+
+      The controller acts as an intermediary between the model and the view. It handles user interactions, triggers actions, and updates the model or view accordingly.
+      Create a class responsible for managing user interactions, including logging in, logging out, registering new users, and updating the UI based on user actions.
+
+A basic separation of concerns:
+
+Model:
+
+      Create a UserManager class that handles user registration and recognition. It can encapsulate the logic for recognizing users from images and managing user data.
+      Create a DatabaseManager class that manages the user data store.
+
+View:
+
+      Create a UIManager class responsible for creating and managing a graphical user interface using tkinter.
+      The UIManager class should create buttons, labels, and other UI elements and update them as needed.
+
+Controller:
+
+      Create an AppController class that handles user interaction and connects the model and view. This class should handle button clicks and user actions.
+      The AppController class should use UserManager to recognize and register users and update the UI with UIManager.
+      The controller must also handle login, logout, and other user interactions.

@@ -1,29 +1,29 @@
 import os
 import pickle
-
 import tkinter as tk
 from tkinter import messagebox
+
 import face_recognition
 
 
 def create_btn(window, text, color, command, fg='white'):
     button = tk.Button(
-                        window,
-                        text=text,
-                        activebackground="black",
-                        activeforeground="white",
-                        fg=fg,
-                        bg=color,
-                        command=command,
-                        height=2,
-                        width=20,
-                        font=('Helvetica bold', 10)
-                    )
+        window,
+        text=text,
+        activebackground="black",
+        activeforeground="white",
+        fg=fg,
+        bg=color,
+        command=command,
+        height=2,
+        width=20,
+        font=('Helvetica bold', 10)
+    )
 
     return button
 
 
-def get_img_label(window):
+def create_label(window):
     label = tk.Label(window)
     label.grid(row=0, column=0)
     return label

@@ -10,8 +10,6 @@ from PIL import Image, ImageTk
 import util
 
 
-
-
 class App:
     def __init__(self):
         self.main_window = tk.Tk()
@@ -23,14 +21,14 @@ class App:
         self.logout_btn = util.create_btn(self.main_window, 'logout', 'red', self.logout)
         self.logout_btn.place(x=850, y=300)
 
-        self.new_user_reg = util.create_btn(self.main_window, 'register new user', 'gray',
-                                            self.register_new_user, fg='black')
-        self.new_user_reg.place(x=850, y=400)
+        self.registration_btn = util.create_btn(self.main_window, 'register new user', 'gray',
+                                                self.register_new_user, fg='black')
+        self.registration_btn.place(x=850, y=400)
 
-        self.cam_frame = util.get_img_label(self.main_window)
-        self.cam_frame.place(x=20, y=20, width=750, height=500)
+        self.camera_label = util.create_label(self.main_window)
+        self.camera_label.place(x=20, y=20, width=750, height=500)
 
-        self.start_webcam(self.cam_frame)
+        self.start_webcam(self.camera_label)
 
         # Create a folder where the images will be stored
         self.db_dir = './db'
@@ -38,6 +36,23 @@ class App:
             os.mkdir(self.db_dir)
 
         self.log_path = './log.txt'
+
+    #     # Create a label to place the buttons within
+    #     self.button_label = tk.Label(self.main_window)
+    #     self.button_label.place(x=850, y=200)  # Adjust the x and y coordinates as needed
+    #
+    #     # Create login button and place it within the label
+    #     self.login_btn = util.create_btn(self.button_label, 'login', 'green', self.login)
+    #     self.login_btn.grid(row=0, column=0)
+    #
+    #     # Create logout button and place it within the label
+    #     self.logout_btn = util.create_btn(self.button_label, 'logout', 'red', self.logout)
+    #     self.logout_btn.grid(row=1, column=0)
+    #
+    #     # Create new user registration button and place it within the label
+    #     self.new_user_reg = util.create_btn(self.button_label, 'register new user', 'gray',
+    #                                         self.register_new_user, fg='black')
+    #     self.new_user_reg.grid(row=2, column=0)
 
     def start_webcam(self, label):
         if 'cap' not in self.__dict__:
@@ -87,14 +102,14 @@ class App:
         self.registration_window.geometry("1200x520+370+120")
 
         self.accept_btn = util.create_btn(self.registration_window, 'Accept', 'green',
-                                          self.accept_register_new_user)
+                                          self.registration)
         self.accept_btn.place(x=750, y=300)
 
         self.try_again_btn = util.create_btn(self.registration_window, 'Try again',
-                                             'orange', self.repeat_registration)
+                                             'orange', self.close_reg_window)
         self.try_again_btn.place(x=750, y=400)
 
-        self.capture_label = util.get_img_label(self.registration_window)
+        self.capture_label = util.create_label(self.registration_window)
         self.capture_label.place(x=10, y=0, width=700, height=500)
 
         self.add_img_to_label(self.capture_label)
@@ -106,7 +121,7 @@ class App:
                                                           'Registration Form:')
         self.registration_txt_label.place(x=750, y=70)
 
-    def repeat_registration(self):
+    def close_reg_window(self):
         self.registration_window.destroy()
 
     def add_img_to_label(self, label):
@@ -119,7 +134,7 @@ class App:
     def start(self):
         self.main_window.mainloop()
 
-    def accept_register_new_user(self):
+    def registration(self):
         user_name = self.user_name_input.get(1.0, "end-1c")
 
         user_img_encode = face_recognition.face_encodings(self.new_user_capture)[0]

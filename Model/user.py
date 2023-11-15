@@ -16,6 +16,24 @@ class User:
         self.role = user_role
         self.encode = img_encode
 
+    def get_t_number(self):
+        return self.t_number
+
+    def get_name(self):
+        return self.name
+
+    def get_registration_date(self):
+        return self.registration_date
+
+    def get_total_attendance(self):
+        return self.total_attendance
+
+    def get_role(self):
+        return self.role
+
+    def get_encode(self):
+        return self.encode
+
     def __str__(self):
         return f"User Info:\n\
                 t_number: {self.t_number}\n\
