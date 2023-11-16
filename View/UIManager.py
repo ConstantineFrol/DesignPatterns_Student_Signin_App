@@ -20,7 +20,7 @@ class UIManager:
             activeforeground="white",
             fg=fg,
             bg=color,
-            command=command,  # You should provide a function or method here
+            command=command,
             height=2,
             width=20,
             font=('Helvetica bold', 10)

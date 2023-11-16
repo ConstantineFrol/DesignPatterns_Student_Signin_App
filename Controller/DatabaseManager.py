@@ -1,5 +1,5 @@
 from Utilities.FileManager import FileManager
-from Model.UserDatabase import UserDatabase
+from Model.Database import UserDatabase
 
 
 class DatabaseManager:
