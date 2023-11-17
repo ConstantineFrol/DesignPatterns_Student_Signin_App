@@ -1,9 +1,9 @@
 import os
 import shutil
-import tkinter as tk  # Import the 'tkinter' module for creating a graphical user interface
-from tkinter import filedialog  # Import 'filedialog' module from tkinter for file dialog functionality
+import tkinter as tk
+from tkinter import filedialog
 
-import cv2  # Import 'cv2' module, which is OpenCV, for computer vision tasks
+import cv2
 from PIL import Image, ImageTk
 
 

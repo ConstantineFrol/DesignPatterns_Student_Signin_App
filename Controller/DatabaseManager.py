@@ -3,9 +3,8 @@ from Model.Database import UserDatabase
 
 
 class DatabaseManager:
-    def __init__(self, db_name):
-        self.db = UserDatabase('mtu.db')
-
+    def __init__(self):
+        self.db = UserDatabase('./DB_Sqlite3/mtu.db')
         self.file_manager = FileManager("error_log.txt")
 
     def insert_user(self, user):

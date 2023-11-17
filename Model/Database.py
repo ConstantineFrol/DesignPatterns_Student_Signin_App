@@ -1,10 +1,10 @@
 import sqlite3
 
 
-class UserDatabase:
+class Database:
     def __init__(self, db_name):
         self.db_name = db_name
-        self.conn = sqlite3.connect(db_name)
+        self.conn = sqlite3.connect(self.db_name)
         self.cursor = self.conn.cursor()
 
         # Create the users table if it doesn't exist
@@ -25,6 +25,11 @@ class UserDatabase:
         for row in self.cursor.execute('SELECT * FROM users'):
             print(len(row))
 
+    def get_all_users_encode(self):
+        self.cursor.execute('SELECT t_number, encode FROM users')
+        result = self.cursor.fetchall()
+        return result
+
     def close_connection(self):
         self.conn.close()
 
@@ -34,8 +39,7 @@ class UserDatabase:
 
 # Testing of Usage
 def test_db():
-
-    db = UserDatabase('mtu.db')
+    db = Database('../DB_Sqlite3/mtu.db')
 
     t_number = 't00123456'
     name = 'lol'
@@ -56,4 +60,17 @@ def test_db():
     db.close_connection()
 
 
-test_db()
+def test_db_2():
+    db = Database('../DB_Sqlite3/mtu.db')
+
+    all_users_encode = db.get_all_users_encode()
+    for user_info in all_users_encode:
+        t_number, encode = user_info
+        print(f'T_number: {t_number}, Encode: {encode}')
+
+    # Close the connection when done
+    db.close_connection()
+
+
+# test_db()
+test_db_2()
