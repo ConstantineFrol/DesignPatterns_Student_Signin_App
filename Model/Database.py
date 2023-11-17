@@ -64,6 +64,7 @@ def test_db_2():
     db = Database('../DB_Sqlite3/mtu.db')
 
     all_users_encode = db.get_all_users_encode()
+    print(f'All users encode type: {type(all_users_encode)}')
     for user_info in all_users_encode:
         t_number, encode = user_info
         print(f'T_number: {t_number}, Encode: {encode}')

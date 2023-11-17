@@ -1,10 +1,10 @@
+from Model.Database import Database
 from Utilities.FileManager import FileManager
-from Model.Database import UserDatabase
 
 
 class DatabaseManager:
     def __init__(self):
-        self.db = UserDatabase('./DB_Sqlite3/mtu.db')
+        self.db = Database('../DB_Sqlite3/mtu.db')
         self.file_manager = FileManager("error_log.txt")
 
     def insert_user(self, user):
@@ -36,9 +36,22 @@ class DatabaseManager:
             self.file_manager.log_error(f"Error printing all users: {str(e)}")
             return None
 
+    def get_all_users_encode(self):
+        try:
+            all_users_encode = self.db.get_all_users_encode()
+            if all_users_encode:
+                return all_users_encode
+            else:
+                return None
+        except Exception as e:
+            self.file_manager.log_error(f"Error getting all users' encode: {str(e)}")
+            return None
+
     def close_connection(self):
         try:
             self.db.close_connection()
             self.file_manager.log_info("Database connection closed.")
         except Exception as e:
             self.file_manager.log_error(f"Error closing database connection: {str(e)}")
+
+
