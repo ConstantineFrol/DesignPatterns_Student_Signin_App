@@ -32,9 +32,9 @@ class UIManager:
         label.grid(row=0, column=0)
         return label
 
-    def get_text_label(self, window, text):
+    def get_text_label(self, window, text, size=21):
         label = tk.Label(window, text=text)
-        label.config(font=("sans-serif", 21), justify="left")
+        label.config(font=("sans-serif", size), justify="left")
         return label
 
     def get_entry_text(self, window):

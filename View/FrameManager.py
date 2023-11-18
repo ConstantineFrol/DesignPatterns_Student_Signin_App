@@ -1,9 +1,11 @@
 import tkinter as tk
 
+from Controller.UserManager import UserManager
+from Utilities.LogManager import LogManager
 from View.UIManager import UIManager
 
 
-class MainApplication(tk.Tk):
+class MainApp(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
 
@@ -78,17 +80,66 @@ class MainFrame(tk.Frame):
 class RegistrationFrame(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        label = tk.Label(self, text="Frame 2", font=("Helvetica", 18))
-        label.pack(pady=10, padx=10)
+        self.log_mngr = LogManager("Logs/error_log.txt")
 
-        # Button to switch to Frame 1
-        button = tk.Button(self, text="Switch to Frame 1",
-                           command=lambda: controller.show_frame(MainFrame))
-        button.pack()
+        self.label = None
+        self.reg_window = UIManager()
 
+        self.accept_btn = self.reg_window.create_btn(self, 'Accept', 'green', self.registration)
+        self.accept_btn.place(x=750, y=380)
 
-if __name__ == "__main__":
-    app = MainApplication()
-    app.geometry("1200x600+350+100")
-    app.title("Frame Switching Example")
-    app.mainloop()
+        self.try_again_btn = self.reg_window.create_btn(self, 'Try again',
+                                                        'orange',
+                                                        command=lambda: controller.show_frame(MainFrame))
+        self.try_again_btn.place(x=750, y=450)
+
+        self.capture_label = self.reg_window.create_label(self)
+        self.capture_label.place(x=10, y=0, width=700, height=500)
+
+        self.add_label('Registration Form:', 21, x=750, y=70)
+
+        self.add_label('Input Name:', 10, x=750, y=130)
+
+        self.user_name_input = self.reg_window.get_entry_text(self)
+        self.user_name_input.place(x=750, y=150)
+
+        self.add_label('Input Role:', 10, x=750, y=200)
+
+        self.user_role_input = self.reg_window.get_entry_text(self)
+        self.user_role_input.place(x=750, y=220)
+
+        self.add_label('Input T-Number:', 10, x=750, y=270)
+
+        self.user_id_input = self.reg_window.get_entry_text(self)
+        self.user_id_input.place(x=750, y=290)
+
+    def registration(self):
+        user_name = self.user_name_input.get(1.0, "end-1c").strip()
+        user_role = self.user_role_input.get(1.0, "end-1c").strip()
+        user_t_num = self.user_id_input.get(1.0, "end-1c").strip()
+        # user_img_encode = face_recognition.face_encodings(self.new_user_capture)[0]
+        user_img_encode = None  # temporary
+
+        usr_mngr = UserManager()
+        if usr_mngr.register_new_user(user_t_num, user_name, 0, user_role, user_img_encode):
+            self.log_mngr.log_info(f'{user_name} has successfully registered !')
+            self.reg_window.msg_box('Success!', f'{user_name} has successfully registered !')
+        else:
+            self.log_mngr.log_error(f'Error registering user: {user_name}')
+            self.reg_window.msg_box(f'Error in {self.__class__.__name__}', 'Error registering user.')
+        # user_img_encode = face_recognition.face_encodings(self.new_user_capture)[0]
+        #
+        # file = open(os.path.join(self.db_dir, '{}.pickle'.format(user_name)), 'wb')
+        # pickle.dump(user_img_encode, file)
+        # self.registration_window.destroy()
+
+    def add_label(self, text, font_size, **kwargs):
+        self.label = self.reg_window.get_text_label(self, text, font_size)
+        self.label.place(**kwargs)
+
+# Testing
+# if __name__ == "__main__":
+#     app = MainApp()
+#     app.geometry("1200x600+350+100")
+#     app.title("AttendEase App")
+#     app.mainloop()
