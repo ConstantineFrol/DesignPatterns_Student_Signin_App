@@ -1,10 +1,10 @@
-from datetime import datetime
-from Model.User import User
 from Controller.DatabaseManager import DatabaseManager
+from Model.User import User
 
 
 class UserManager:
     def __init__(self):
+        self.db_mgmt = None
         self.db_connection = DatabaseManager()
 
     def recognize_user(self, img_snap, db_connection):
@@ -44,13 +44,13 @@ class UserManager:
         print('You just logged out')
 
     def register_new_user(self, user_t_num, user_name, attendance_qty, user_role, user_img_encode):
-        pass
-
-
-    def create_user(self, user_id, user_name, attendance_qty, user_role, img_encode):
-        try:
-            user = User(user_id, user_name, attendance_qty, user_role, img_encode)
-            self.db_connection.insert_user(user)
-            self.main_window.msg_box('User Created', f'User {user_name} created successfully.')
-        except Exception as e:
-            self.main_window.msg_box('Error', f'Error creating user: {str(e)}')
+        user = User(str(user_t_num).lower(), str(user_name).lower(), attendance_qty, str(user_role).lower(), user_img_encode)
+        self.db_mgmt = DatabaseManager()
+        self.db_mgmt.insert_user(user)
+        # check if user was created
+        if self.db_mgmt.find_user(user_t_num) is not None:
+            self.db_mgmt.close_connection()
+            return True
+        else:
+            self.db_mgmt.close_connection()
+            return False

@@ -1,6 +1,7 @@
 import tkinter as tk
 
 from Controller.UserManager import UserManager
+from Utilities.FileManager import FileManager
 from Utilities.LogManager import LogManager
 from View.UIManager import UIManager
 
@@ -80,8 +81,10 @@ class MainFrame(tk.Frame):
 class RegistrationFrame(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        self.log_mngr = LogManager("Logs/error_log.txt")
 
+        self.file_manager = FileManager()
+        self.log_mngr = LogManager(self.file_manager.get_path('logs'))
+        self.controller = controller
         self.label = None
         self.reg_window = UIManager()
 
@@ -118,15 +121,16 @@ class RegistrationFrame(tk.Frame):
         user_role = self.user_role_input.get(1.0, "end-1c").strip()
         user_t_num = self.user_id_input.get(1.0, "end-1c").strip()
         # user_img_encode = face_recognition.face_encodings(self.new_user_capture)[0]
-        user_img_encode = None  # temporary
+        user_img_encode = '0, 0,'  # temporary
 
         usr_mngr = UserManager()
         if usr_mngr.register_new_user(user_t_num, user_name, 0, user_role, user_img_encode):
-            self.log_mngr.log_info(f'{user_name} has successfully registered !')
+
+            self.controller.show_frame(MainFrame)
             self.reg_window.msg_box('Success!', f'{user_name} has successfully registered !')
         else:
-            self.log_mngr.log_error(f'Error registering user: {user_name}')
-            self.reg_window.msg_box(f'Error in {self.__class__.__name__}', 'Error registering user.')
+            self.log_mngr.log_error(f'Error registering user: {str(user_name)}')
+            self.reg_window.msg_box(f'Error', 'Error registering user.')
         # user_img_encode = face_recognition.face_encodings(self.new_user_capture)[0]
         #
         # file = open(os.path.join(self.db_dir, '{}.pickle'.format(user_name)), 'wb')
@@ -137,9 +141,11 @@ class RegistrationFrame(tk.Frame):
         self.label = self.reg_window.get_text_label(self, text, font_size)
         self.label.place(**kwargs)
 
-# Testing
-# if __name__ == "__main__":
-#     app = MainApp()
-#     app.geometry("1200x600+350+100")
-#     app.title("AttendEase App")
-#     app.mainloop()
+
+# Testing FrameManager.py
+def test():
+    if __name__ == "__main__":
+        app = MainApp()
+        app.geometry("1200x600+350+100")
+        app.title("AttendEase App")
+        app.mainloop()

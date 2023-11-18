@@ -2,3 +2,10 @@
 2023-11-18 13:14:32,548 - my_logger - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: 'src/paths.json'
 2023-11-18 13:22:08,830 - log_message - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: '../src/paths.json'
 2023-11-18 13:23:33,061 - log_message - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: '../src/paths.json'
+2023-11-18 20:27:40,226 - log_message - ERROR - Error inserting user: write() argument must be str, not None
+2023-11-18 20:39:15,157 - log_message - ERROR - Error inserting user: write() argument must be str, not None
+2023-11-18 20:44:38,751 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
+2023-11-18 20:49:14,205 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
+2023-11-18 20:53:02,474 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
+2023-11-18 20:55:57,508 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
+2023-11-18 20:56:37,072 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None

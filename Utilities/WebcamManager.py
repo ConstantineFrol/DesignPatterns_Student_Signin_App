@@ -27,7 +27,7 @@ class WebcamManager:
 
         if not ret:
             error_message = "Failed to read from the webcam."
-            self.file_manager.log_error(error_message)
+            self.file_manager.log_error(f'{error_message} in {self.__class__.__name__}.py')
             return None
         else:
             self.img_snap = frame

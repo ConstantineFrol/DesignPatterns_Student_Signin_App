@@ -1,21 +1,13 @@
-import datetime
-
 import cv2
 import face_recognition
 from PIL import Image, ImageTk
 
-import util
-from Controller.DatabaseManager import DatabaseManager
-from Utilities.FileManager import FileManager
 from View.FrameManager import MainApp
-from View.UIManager import UIManager
 
 
 class App:
     def __init__(self):
         pass
-
-
 
     def start_webcam(self, label):
         if 'cap' not in self.__dict__:
@@ -60,7 +52,6 @@ class App:
                 break
 
         return user_id
-
 
     def start(self):
         print("Starting app...")

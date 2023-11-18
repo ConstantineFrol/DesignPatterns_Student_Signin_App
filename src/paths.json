@@ -1,5 +1,4 @@
 {
   "logs": "Logs/user_log.txt",
-  "age": 30,
-  "city": "New York"
+  "db": "./DB_Sqlite3/mtu.db"
 }

@@ -1,0 +1,2 @@
+2023-11-18 22:04:34,316 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
+2023-11-18 22:06:03,313 - log_message - ERROR - Error registering user: lolikas
