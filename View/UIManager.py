@@ -12,9 +12,9 @@ class UIManager:
         self.window.geometry(dimensions)
         return self.window
 
-    def create_btn(window, text, color, command, fg='white'):
+    def create_btn(self, frame, text, color, command, fg='white'):
         button = tk.Button(
-            window,
+            frame,
             text=text,
             activebackground="black",
             activeforeground="white",
@@ -52,4 +52,4 @@ def test():
     ui_manager.msg_box(window, 'Hi')
 
 
-test()
+# test()

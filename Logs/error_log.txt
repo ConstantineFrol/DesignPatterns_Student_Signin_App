@@ -1,0 +1,4 @@
+2023-11-18 13:14:03,995 - my_logger - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: 'src/paths.json'
+2023-11-18 13:14:32,548 - my_logger - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: 'src/paths.json'
+2023-11-18 13:22:08,830 - log_message - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: '../src/paths.json'
+2023-11-18 13:23:33,061 - log_message - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: '../src/paths.json'
