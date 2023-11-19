@@ -9,7 +9,7 @@ class Database:
 
         # Create the users table if it doesn't exist
         self.cursor.execute(
-            'CREATE TABLE IF NOT EXISTS users (t_number TEXT, name TEXT, registered TEXT, total_attendance INTEGER, role TEXT, encode TEXT)')
+            'CREATE TABLE IF NOT EXISTS users (t_number TEXT, name TEXT, registered TEXT, total_attendance INTEGER, role TEXT, encode BLOB)')
 
     def insert_user(self, t_number, name, registered, total_attendance, role, encode):
         self.cursor.execute('INSERT INTO users VALUES (?, ?, ?, ?, ?, ?)',

@@ -8,7 +8,25 @@ class UserManager:
         self.db_connection = DatabaseManager()
 
     def recognize_user(self, img_snap, db_connection):
-        pass
+        # embeddings_unknown = face_recognition.face_encodings(img)
+        # if len(embeddings_unknown) == 0:
+        #     return 'no_persons_found'
+        #
+        # embeddings_unknown = embeddings_unknown[0]
+        #
+        # all_users_encode = db_connection.get_all_users_encode()
+        #
+        # match = False
+        # user_id = 'unknown_person'
+        #
+        # for t_number, encode in all_users_encode:
+        #     match = face_recognition.compare_faces([encode], embeddings_unknown)[0]
+        #     if match:
+        #         user_id = t_number
+        #         break
+        #
+        # return user_id
+        print('Recognizing user')
 
     def login(self):
         # t_number = self.recognize_user(self.img_snap, self.db_connection)
@@ -44,7 +62,8 @@ class UserManager:
         print('You just logged out')
 
     def register_new_user(self, user_t_num, user_name, attendance_qty, user_role, user_img_encode):
-        user = User(str(user_t_num).lower(), str(user_name).lower(), attendance_qty, str(user_role).lower(), user_img_encode)
+        user = User(str(user_t_num).lower(), str(user_name).lower(), attendance_qty, str(user_role).lower(),
+                    user_img_encode)
         self.db_mgmt = DatabaseManager()
         self.db_mgmt.insert_user(user)
         # check if user was created

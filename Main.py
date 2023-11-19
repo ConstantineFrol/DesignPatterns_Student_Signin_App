@@ -29,29 +29,7 @@ class App:
         # Repeat in 20 seconds
         self._label.after(20, self.get_webcam_data)
 
-    def register_new_user(self):
-        print('New user registered')
 
-    def recognize_user(img, db_connection):
-
-        embeddings_unknown = face_recognition.face_encodings(img)
-        if len(embeddings_unknown) == 0:
-            return 'no_persons_found'
-
-        embeddings_unknown = embeddings_unknown[0]
-
-        all_users_encode = db_connection.get_all_users_encode()
-
-        match = False
-        user_id = 'unknown_person'
-
-        for t_number, encode in all_users_encode:
-            match = face_recognition.compare_faces([encode], embeddings_unknown)[0]
-            if match:
-                user_id = t_number
-                break
-
-        return user_id
 
     def start(self):
         print("Starting app...")

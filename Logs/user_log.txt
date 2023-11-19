@@ -1,2 +1,14 @@
 2023-11-18 22:04:34,316 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
 2023-11-18 22:06:03,313 - log_message - ERROR - Error registering user: lolikas
+2023-11-19 09:10:27,995 - log_message - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-19 09:11:22,627 - log_message - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-19 09:11:39,843 - log_message - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-19 09:12:30,382 - log_message - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-19 09:13:37,685 - log_message - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-19 09:14:52,016 - log_message - ERROR - Failed to read from the webcam. in {'WebcamManager'}.py
+2023-11-19 09:15:36,374 - log_message - ERROR - Failed to read from the webcam.
+2023-11-19 09:16:21,720 - log_message - ERROR - Failed to read from the webcam.
+2023-11-19 09:16:30,781 - log_message - ERROR - Failed to read from the webcam.
+2023-11-19 09:16:42,604 - log_message - ERROR - Failed to read from the webcam.
+2023-11-19 09:16:53,587 - log_message - ERROR - Failed to read from the webcam.
+2023-11-19 09:21:16,218 - log_message - ERROR - Failed to read from the webcam. in WebcamManager.py
