@@ -1,3 +1,5 @@
+import os
+import pickle
 import tkinter as tk
 
 import cv2
@@ -47,7 +49,7 @@ class MainFrame(tk.Frame):
 
         self.controller = controller
         self.cam = WebcamManager()
-
+        self.usr_mngr = UserManager()
         self.main_window = UIManager()
 
         self.camera_label = self.main_window.create_label(self)
@@ -68,19 +70,32 @@ class MainFrame(tk.Frame):
 
     def show_registration_frame(self):
         # Get the snap from the webcam
-        snap = self.get_snap()
+        snap = self.cam.get_user_img()
 
         # Show the RegistrationFrame and pass the image
         self.controller.show_frame(RegistrationFrame, user_img=snap)
 
     def login(self):
-        print('You just login')
+        user_img = self.cam.get_user_snap()
+        result = self.usr_mngr.login(user_img)
+        if result:
+            user_name = self.usr_mngr.get_name_by_id(result)
+            self.main_window.msg_box('Welcome back !', f'Welcome, {user_name}')
+        else:
+            self.main_window.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
 
     def logout(self):
-        print('You just logout')
+        user_img = self.cam.get_user_snap()
+        result = self.usr_mngr.logout(user_img)
+        if result:
+            user_name = self.usr_mngr.get_name_by_id(result)
+            self.main_window.msg_box('See you soon!', 'Goodbye, {}.'.format(user_name))
+        else:
+            self.main_window.msg_box('Ups...', 'Unknown user. Please register new user or try again.')
+
 
     def get_snap(self):
-        return self.cam.get_user_img()
+        return self.cam.get_user_snap()
 
 
 class RegistrationFrame(tk.Frame):
@@ -125,21 +140,32 @@ class RegistrationFrame(tk.Frame):
 
     def registration(self):
 
-        usr_mngr = UserManager()
+        self.usr_mngr = UserManager()
 
         user_name = self.user_name_input.get(1.0, "end-1c").strip()
         user_role = self.user_role_input.get(1.0, "end-1c").strip()
         user_t_num = self.user_id_input.get(1.0, "end-1c").strip()
         self.np_image = self.img_into_np_arr(self.captured_image)
         self.current_user_img = cv2.cvtColor(self.np_image, cv2.COLOR_BGR2RGB)
+
         user_img_encode = face_recognition.face_encodings(self.current_user_img)[0]
 
-        if usr_mngr.register_new_user(user_t_num, user_name, 0, user_role, user_img_encode):
+        # In case we want to store the image in a bucket file
+        file = open(os.path.join('bucket', '{}.bucket'.format(user_t_num)), 'wb')
+        pickle.dump(user_img_encode, file)
+
+        res = self.usr_mngr.register_new_user(user_t_num, user_name, 0, user_role, user_img_encode)
+
+        if res:
+            # Reset or clear the input fields
+            self.user_name_input.delete(1.0, "end")
+            self.user_role_input.delete(1.0, "end")
+            self.user_id_input.delete(1.0, "end")
 
             self.controller.show_frame(MainFrame)
             self.reg_window.msg_box('Success!', f'{user_name} has successfully registered !')
         else:
-            self.log_mngr.log_error(f'Error registering user: {str(user_name)}')
+            # self.log_mngr.log_error(f'Error registering user: {str(user_name)}')
             self.reg_window.msg_box(f'Error', 'Error registering user.')
 
     def update_captured_image(self, user_img=None):

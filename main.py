@@ -1,6 +1,6 @@
 import datetime
 import os.path
-import pickle
+import bucket
 import tkinter as tk
 
 import cv2
@@ -76,6 +76,8 @@ class App:
 
     def login(self):
 
+        print(f'THis is type of self.img_snap:\t{type(self.img_snap)}')
+
         name = util.recognize(self.img_snap, self.db_dir)
 
         if name in ['unknown_person', 'no_persons_found']:
@@ -139,8 +141,15 @@ class App:
 
         user_img_encode = face_recognition.face_encodings(self.new_user_capture)[0]
 
-        file = open(os.path.join(self.db_dir, '{}.pickle'.format(user_name)), 'wb')
-        pickle.dump(user_img_encode, file)
+        # print(f'Before store into PIckle: {type(user_img_encode)}')
+        # print('/////////////////////////////// *USER* ////////////////////////////////////')
+        # print("Shape:", user_img_encode.shape)
+        # print("Size:", user_img_encode.size)
+        # print("Type:", user_img_encode.dtype)
+        # print('/////////////////////////////// *USER* ////////////////////////////////////')
+
+        file = open(os.path.join(self.db_dir, '{}.bucket'.format(user_name)), 'wb')
+        bucket.dump(user_img_encode, file)
         self.registration_window.destroy()
         util.msg_box('Success!', 'User was registered successfully !')
 

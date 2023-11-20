@@ -12,3 +12,14 @@
 2023-11-19 09:16:42,604 - log_message - ERROR - Failed to read from the webcam.
 2023-11-19 09:16:53,587 - log_message - ERROR - Failed to read from the webcam.
 2023-11-19 09:21:16,218 - log_message - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-19 17:21:53,347 - log_message - ERROR - Error getting all users' encode in DatabaseManager.py:	Cannot operate on a closed database.
+2023-11-19 17:31:33,019 - log_message - ERROR - Error getting all users' encode in DatabaseManager.py:	Cannot operate on a closed database.
+2023-11-19 19:12:56,321 - log_message - ERROR - Error getting all users' encode in DatabaseManager.py:	Cannot operate on a closed database.
+2023-11-19 19:41:30,304 - log_message - ERROR - Error getting all users' encode in DatabaseManager.py:	Cannot operate on a closed database.
+2023-11-19 19:42:54,883 - log_message - ERROR - Error getting all users' encode in DatabaseManager.py:	Cannot operate on a closed database.
+2023-11-19 19:43:49,185 - log_message - ERROR - Error getting all users' encode in DatabaseManager.py
+2023-11-19 19:44:19,333 - log_message - ERROR - Error getting all users' encode in DatabaseManager.py
+2023-11-19 19:45:02,277 - log_message - ERROR - Error getting all users encode in DatabaseManager.py
+2023-11-19 20:33:43,631 - log_message - ERROR - Error inserting user in DatabaseManager.py:	Cannot operate on a closed database.
+2023-11-19 21:41:07,436 - log_message - ERROR - Error printing all users in DatabaseManager.py:	Cannot operate on a closed database.
+2023-11-19 22:35:27,659 - log_message - ERROR - Error registering user: kostia

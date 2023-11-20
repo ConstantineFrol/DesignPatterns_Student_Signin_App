@@ -13,7 +13,7 @@ class Database:
 
     def insert_user(self, t_number, name, registered, total_attendance, role, encode):
         self.cursor.execute('INSERT INTO users VALUES (?, ?, ?, ?, ?, ?)',
-                            (t_number, name, registered, total_attendance, role, encode))
+                            (t_number, name, registered, total_attendance, role, sqlite3.Binary(encode)))
         self.conn.commit()
 
     def find_user(self, t_number):
@@ -23,7 +23,7 @@ class Database:
 
     def print_all_users(self):
         for row in self.cursor.execute('SELECT * FROM users'):
-            print(len(row))
+            print(row)
 
     def get_all_users_encode(self):
         self.cursor.execute('SELECT t_number, encode FROM users')
@@ -73,5 +73,11 @@ def test_db_2():
     db.close_connection()
 
 
+def delete_all_users():
+    db = Database('../DB_Sqlite3/mtu.db')
+    db.cursor.execute(f'DELETE FROM users')
+    db.close_connection()
+
 # test_db()
 # test_db_2()
+# delete_all_users()

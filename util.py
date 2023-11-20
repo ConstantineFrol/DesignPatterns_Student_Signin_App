@@ -1,5 +1,5 @@
 import os
-import pickle
+import bucket
 import tkinter as tk
 from tkinter import messagebox
 
@@ -63,7 +63,7 @@ def recognize(img, db_path):
         path_ = os.path.join(db_path, db_dir[j])
 
         file = open(path_, 'rb')
-        embeddings = pickle.load(file)
+        embeddings = bucket.load(file)
 
         match = face_recognition.compare_faces([embeddings], embeddings_unknown)[0]
         j += 1
