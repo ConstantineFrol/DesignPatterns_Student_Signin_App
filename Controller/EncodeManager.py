@@ -15,8 +15,8 @@ class EncodeManager:
         else:
             return encode[0]
 
-    def match_encodings(user_img, encode_list):
-        match = face_recognition.compare_faces(encode_list, user_img)
+    def match_encodings(embeddings, embeddings_unknown):
+        match = face_recognition.compare_faces([embeddings], embeddings_unknown)[0]
         return match
 
     def recognize(img, db_path):

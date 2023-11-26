@@ -7,7 +7,6 @@ from View.FrameManager import MainApp
 
 class App:
 
-
     def start(self):
         print("Starting app...")
         app = MainApp()

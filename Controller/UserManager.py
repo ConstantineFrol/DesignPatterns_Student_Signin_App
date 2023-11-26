@@ -1,9 +1,8 @@
 import os
 import pickle
 
-import face_recognition
-
 from Controller.DatabaseManager import DatabaseManager
+from Controller.EncodeManager import EncodeManager
 from Model.User import User
 
 
@@ -12,32 +11,34 @@ class UserManager:
     def __init__(self):
 
         self.db_mngr = DatabaseManager()
+        self.encoder = EncodeManager()
 
     def recognize_user(self, img_snap):
 
-        embeddings_unknown = face_recognition.face_encodings(img_snap)
-        if len(embeddings_unknown) == 0:
+        self.embeddings_unknown = self.encoder.encode_img(img_snap)
+        if len(self.embeddings_unknown) == 0:
             return 'no_persons_found'
         else:
-            embeddings_unknown = embeddings_unknown[0]
+            self.embeddings_unknown = self.embeddings_unknown[0]
 
         user_arrays = self.db_mngr.get_usr_encod_as_arr()
 
         if user_arrays:
             for user_t_number, embedding in user_arrays:
 
-                match = face_recognition.compare_faces([embedding], embeddings_unknown)[0]
+                # match = face_recognition.compare_faces([embedding], self.embeddings_unknown)[0]
+                match = self.encoder.match_encodings(embedding, self.embeddings_unknown)
 
                 if match:
                     print(f"User t_number: {user_t_number}")
                     return user_t_number
                 else:
                     db_path = 'bucket'
-                    embeddings_unknown = face_recognition.face_encodings(img_snap)
-                    if len(embeddings_unknown) == 0:
+                    self.embeddings_unknown = self.encoder.encode_img(img_snap)
+                    if len(self.embeddings_unknown) == 0:
                         return 'no_persons_found'
                     else:
-                        embeddings_unknown = embeddings_unknown[0]
+                        self.embeddings_unknown = self.embeddings_unknown[0]
 
                     db_dir = sorted(os.listdir(db_path))
 
@@ -49,7 +50,8 @@ class UserManager:
                         file = open(path_, 'rb')
                         embeddings = pickle.load(file)
 
-                        match = face_recognition.compare_faces([embeddings], embeddings_unknown)[0]
+                        # match = face_recognition.compare_faces([embeddings], embeddings_unknown)[0]
+                        match = self.encoder.match_encodings(embeddings, self.embeddings_unknown)
                         j += 1
 
                     if match:
