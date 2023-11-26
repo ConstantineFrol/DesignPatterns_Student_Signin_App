@@ -1,11 +1,86 @@
-2023-11-18 13:14:03,995 - my_logger - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: 'src/paths.json'
-2023-11-18 13:14:32,548 - my_logger - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: 'src/paths.json'
-2023-11-18 13:22:08,830 - log_message - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: '../src/paths.json'
-2023-11-18 13:23:33,061 - log_message - ERROR - Error in FileManager.py:	[Errno 2] No such file or directory: '../src/paths.json'
-2023-11-18 20:27:40,226 - log_message - ERROR - Error inserting user: write() argument must be str, not None
-2023-11-18 20:39:15,157 - log_message - ERROR - Error inserting user: write() argument must be str, not None
-2023-11-18 20:44:38,751 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
-2023-11-18 20:49:14,205 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
-2023-11-18 20:53:02,474 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
-2023-11-18 20:55:57,508 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
-2023-11-18 20:56:37,072 - log_message - ERROR - Error inserting user in DatabaseManager.py:	write() argument must be str, not None
+2023-11-26 19:27:05,284 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:05,284 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:05,284 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:05,284 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:05,284 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:05,284 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:05,284 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:05,284 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:09,576 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:09,576 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:09,576 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:09,576 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:09,576 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:09,576 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:09,576 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:09,576 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:12,580 - info - INFO - New Registration:	id:, name:.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:16,468 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:27:19,300 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:34:43,935 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:34:43,935 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:34:43,935 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:34:43,935 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:34:43,935 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:34:43,935 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:34:43,935 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:34:43,935 - info - INFO - User:	id:2345234, name:sdfg	logged in.
+2023-11-26 19:34:46,159 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:34:46,159 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:34:46,159 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:34:46,159 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:34:46,159 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:34:46,159 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:34:46,159 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:34:46,159 - info - INFO - User:	id:2345234, name:sdfg	logged out.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:43,061 - info - INFO - New Registration:	id:r00176844, name:sarah.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:45:55,597 - info - INFO - User:	id:r00176844, name:sarah	logged in.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
