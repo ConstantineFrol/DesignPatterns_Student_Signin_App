@@ -84,3 +84,355 @@
 2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
 2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
 2023-11-26 19:46:00,642 - info - INFO - User:	id:r00176844, name:sarah	logged out.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:15:54,952 - info - INFO - New Registration:	id:t00123344, name:sarah.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:22,517 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:57,909 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:57,909 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:57,909 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:57,909 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:57,909 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:57,909 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:57,909 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:16:57,909 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:17:24,414 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:17:24,414 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:17:24,414 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:17:24,414 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:17:24,414 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:17:24,414 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:17:24,414 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:17:24,414 - info - INFO - User:	id:t00123344, name:sarah	logged in.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error inserting user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:38:14,808 - error - ERROR - Error finding user: Cannot operate on a closed database.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:07,676 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:40:22,435 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:15,992 - info - INFO - New Registration:	id:t00123456, name:sarah.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:42:43,802 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:17,260 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:47,311 - info - INFO - New Registration:	id:t00124567, name:kostia.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:43:50,702 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-26 20:44:00,585 - info - INFO - User:	id:t00123456, name:sarah	logged in.
+2023-11-28 20:56:48,764 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 20:56:48,764 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 20:56:48,764 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 20:56:48,764 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 20:56:48,764 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 20:56:48,764 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:02:18,780 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:02:18,780 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:02:18,780 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:02:18,780 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:02:18,780 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:02:18,780 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:02:18,780 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:02:19,951 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fd7fff024f0>, None, 1
+2023-11-28 21:05:20,890 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:20,890 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:20,890 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:20,890 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:20,890 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:20,890 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:20,890 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:22,167 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7fb5bc1021f0>, None, 1
+2023-11-28 21:05:33,774 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:33,774 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:33,774 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:33,774 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:33,774 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:33,774 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:33,774 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:34,758 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:05:44,412 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:02,721 - error - ERROR - Check the camera connection in UserManager.py - __call__(): incompatible function arguments. The following argument types are supported:
+    1. (self: _dlib_pybind11.fhog_object_detector, image: numpy.ndarray, upsample_num_times: int = 0) -> _dlib_pybind11.rectangles
+
+Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
+2023-11-28 21:07:22,327 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:07:22,327 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:07:22,327 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:07:22,327 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:07:22,327 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:07:22,327 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-28 21:07:22,327 - error - ERROR - Failed to read from the webcam. in WebcamManager.py

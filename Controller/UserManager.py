@@ -16,15 +16,20 @@ class UserManager:
         self.file_manager = FileManager()
         self.db_mngr = DatabaseManager()
         self.user_log = LogManager(self.file_manager.get_path('u_logs'))
+        self.err_log = LogManager(self.file_manager.get_path('er_logs'))
+        self.embeddings_unknown=[]
 
     def recognize_user(self, img_snap):
         """Recognize a user based on face recognition in the provided image snapshot."""
-        embeddings_unknown = face_recognition.face_encodings(img_snap)
-
-        if len(embeddings_unknown) == 0:
+        # global self.embeddings_unknown
+        try:
+            self.embeddings_unknown = face_recognition.face_encodings(img_snap)
+        except Exception as e:
+            self.err_log.log_error(f"Check the camera connection in {self.__class__.__name__}.py - {str(e)}")
+        if len(self.embeddings_unknown) == 0:
             return 'no_persons_found'
         else:
-            embeddings_unknown = embeddings_unknown[0]
+            embeddings_unknown = self.embeddings_unknown[0]
 
         user_arrays = self.db_mngr.get_usr_encod_as_arr()
 
