@@ -105,3 +105,5 @@ Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, No
 Invoked with: <_dlib_pybind11.fhog_object_detector object at 0x7f15c36fe5b0>, None, 1
 2023-11-28 21:06:05,424 - error - ERROR - Error: Image is None, when passing from MainApp to RegistrationFrame.
 2023-11-28 21:07:22,327 - error - ERROR - Failed to read from the webcam. in WebcamManager.py
+2023-11-29 20:09:24,154 - info - INFO - User:	id:t00124567, name:kostia	logged in.
+2023-11-29 20:09:29,232 - info - INFO - User:	id:t00124567, name:kostia	logged out.

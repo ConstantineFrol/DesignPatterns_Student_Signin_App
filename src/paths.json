@@ -1,5 +1,5 @@
 {
-  "u_logs": "./Logs/user_log.txt",
-  "er_logs": "./Logs/error_log.txt",
+  "u_logs": "/home/codewizard/PycharmProjects/DesignPatterns_Student_Signin_App/Logs/user_log.txt",
+  "er_logs": "/home/codewizard/PycharmProjects/DesignPatterns_Student_Signin_App/Logs/error_log.txt",
   "db": "./DB_Sqlite3/mtu.db"
 }

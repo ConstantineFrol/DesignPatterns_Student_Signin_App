@@ -13,7 +13,7 @@ class FileManager:
 
         """Get the file path associated with the given key from the 'paths.json' file."""
         try:
-            with open('./src/paths.json', 'r') as file:
+            with open('/home/codewizard/PycharmProjects/DesignPatterns_Student_Signin_App/src/paths.json', 'r') as file:
                 json_data = file.read()
 
             my_dict = json.loads(json_data)

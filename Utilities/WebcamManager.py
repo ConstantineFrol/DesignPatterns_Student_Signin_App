@@ -22,7 +22,7 @@ class WebcamManager:
         self._initialized = True
 
         self.file_manager = FileManager()
-        self.log_manager = LogManager(f'./{self.file_manager.get_path("er_logs")}')
+        self.log_manager = LogManager(self.file_manager.get_path("er_logs"))
 
         self.cap = None
         self.snap = None
