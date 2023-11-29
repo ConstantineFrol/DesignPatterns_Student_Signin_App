@@ -8,11 +8,11 @@ from View.FrameManager import MainApp
 class App:
 
     def start(self):
-        print("Starting app...")
-        app = MainApp()
-        app.geometry("1200x600+350+100")
-        app.title("AttendEase App")
-        app.mainloop()
+        print("Starting App...")
+        my_app = MainApp()
+        my_app.geometry("1200x600+350+100")
+        my_app.title("AttendEase App")
+        my_app.mainloop()
 
 
 if __name__ == "__main__":

@@ -17,7 +17,7 @@ class UserManager:
         self.db_mngr = DatabaseManager()
         self.user_log = LogManager(self.file_manager.get_path('u_logs'))
         self.err_log = LogManager(self.file_manager.get_path('er_logs'))
-        self.embeddings_unknown=[]
+        self.embeddings_unknown = []
 
     def recognize_user(self, img_snap):
         """Recognize a user based on face recognition in the provided image snapshot."""

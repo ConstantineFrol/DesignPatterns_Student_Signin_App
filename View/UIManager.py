@@ -50,12 +50,3 @@ class UIManager:
     def msg_box(self, title, description):
         """Display a message box."""
         messagebox.showinfo(title, description)
-
-
-# Testing
-def test():
-    ui_manager = UIManager()
-    window = ui_manager.create_window("My Window", "200x200")
-    ui_manager.msg_box("Title", "Description")
-
-# test()
